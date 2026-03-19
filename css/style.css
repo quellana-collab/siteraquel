@@ -669,6 +669,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .menu-toggle {
+  background: red !important;
+}
+
   .servicos-grid,
   .portfolio-grid,
   .sobre-cards,
@@ -692,10 +696,10 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .topo {
-    position: relative;
-    top: auto;
+    position: relative !important;
+    top: auto !important;
     width: 100%;
     background: rgba(10, 10, 15, 0.96);
     backdrop-filter: blur(14px);
@@ -709,6 +713,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    position: relative;
   }
 
   .logo-area {
@@ -722,15 +727,16 @@ a {
 
   .logo-img img {
     height: 44px;
+    width: auto;
     max-width: 110px;
   }
 
   .logo-texto p {
-    display: none;
+    display: none !important;
   }
 
   .menu-toggle {
-    display: inline-flex;
+    display: inline-flex !important;
     width: 44px;
     height: 44px;
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -742,6 +748,8 @@ a {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   .menu-toggle span {
@@ -766,11 +774,11 @@ a {
   }
 
   .menu {
+    display: flex !important;
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
     right: 0;
-    display: none;
     flex-direction: column;
     gap: 6px;
     background: rgba(17, 17, 26, 0.98);
@@ -782,7 +790,7 @@ a {
   }
 
   .menu.ativo {
-    display: flex;
+    display: flex !important;
   }
 
   .menu a {
