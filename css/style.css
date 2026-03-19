@@ -694,27 +694,24 @@ a {
 
 @media screen and (max-width: 768px) {
 .topo {
-  position: relative !important;
-  top: unset !important;
-  right: unset !important;
-  bottom: unset !important;
-  left: unset !important;
-  z-index: unset !important;
+  all: unset;
+  display: block;
   width: 100%;
   background: rgba(10, 10, 15, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: none !important;
 }
 
-  .nav {
-    min-height: 72px;
-    padding: 12px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    position: relative;
-  }
+.nav {
+  min-height: 72px;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
 
   .logo-area {
   display: flex;
