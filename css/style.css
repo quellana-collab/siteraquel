@@ -693,14 +693,16 @@ a {
 }
 
 @media screen and (max-width: 768px) {
- .topo {
-  position: relative;
+.topo {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
   width: 100%;
+  z-index: auto !important;
   background: rgba(10, 10, 15, 0.96);
-  backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: none;
 }
-
 
   .nav {
     min-height: 72px;
@@ -802,11 +804,10 @@ a {
     background: rgba(255, 255, 255, 0.06);
   }
 
-  .hero {
+ .hero {
   min-height: auto;
-  padding-top: 96px;
+  padding-top: 24px !important;
 }
-
   .hero-content {
     grid-template-columns: 1fr;
     gap: 26px;
