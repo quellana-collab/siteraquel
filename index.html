@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
       <span></span>
       <span></span>
       <span></span>
@@ -313,13 +313,12 @@
   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
-
 <script>
   const botaoMenu = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu");
 
   if (botaoMenu && menu) {
-    botaoMenu.addEventListener("click", () => {
+    botaoMenu.addEventListener("click", function () {
       menu.classList.toggle("ativo");
       botaoMenu.classList.toggle("ativo");
 
@@ -327,8 +326,8 @@
       botaoMenu.setAttribute("aria-expanded", String(!expandido));
     });
 
-    document.querySelectorAll(".menu a").forEach(link => {
-      link.addEventListener("click", () => {
+    document.querySelectorAll(".menu a").forEach(function (link) {
+      link.addEventListener("click", function () {
         menu.classList.remove("ativo");
         botaoMenu.classList.remove("ativo");
         botaoMenu.setAttribute("aria-expanded", "false");
@@ -336,5 +335,6 @@
     });
   }
 </script>
+
 </body>
 </html>
