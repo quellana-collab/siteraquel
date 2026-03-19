@@ -28,7 +28,7 @@
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#portfolio">Portfólio</a>
+        <a href="#diferenciais">Diferencias</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
@@ -165,7 +165,7 @@
   </section>
 
   <!-- DIFERENCIAIS -->
-  <section class="destaques section">
+  <section class="destaques section" id="diferenciais">
     <div class="container destaque-grid">
       <div class="destaque-texto">
         <span class="section-mini-title">Diferenciais</span>
@@ -273,13 +273,6 @@
         </li>
 
         <li>
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail">
-          <a href="mailto:quel.lana1@gmail.com">
-            quel.lana1@gmail.com
-          </a>
-        </li>
-
-        <li>
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
           <a href="https://www.linkedin.com/in/raquel-borja-lana/" target="_blank">
             LinkedIn
@@ -288,12 +281,14 @@
       </ul>
     </div>
 
-    <form class="formulario">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <input type="text" placeholder="Assunto">
-      <textarea placeholder="Escreva sua mensagem"></textarea>
-      <button type="submit" class="btn btn-principal">Enviar mensagem</button>
+   <form class="formulario" action="https://formspree.io/f/xjgalbvr" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="text" name="assunto" placeholder="Assunto">
+      <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+       <button type="submit" class="btn btn-principal">
+        Enviar mensagem
+       </button>
     </form>
 
   </div>
