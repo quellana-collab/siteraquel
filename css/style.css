@@ -110,7 +110,7 @@ a {
 }
 
 .logo-img img {
-  height: 90px;
+  height: 60px;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -726,14 +726,6 @@ a {
   flex: 1;
 }
 
-.logo-img {
-  border: 1px solid red;
-}
-
-.logo-img img {
-  border: 1px solid yellow;
-  background: rgba(255, 0, 0, 0.1);
-}
 
 .logo-img {
   flex-shrink: 0;
