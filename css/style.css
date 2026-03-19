@@ -695,11 +695,12 @@ a {
 @media screen and (max-width: 768px) {
 .topo {
   position: relative !important;
+  top: auto !important;
   display: block;
   width: 100%;
   background: rgba(10, 10, 15, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  top: auto;
+  
 }
 
 .nav {
