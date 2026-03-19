@@ -694,15 +694,15 @@ a {
 
 @media screen and (max-width: 768px) {
  .topo {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
   width: 100%;
   background: rgba(10, 10, 15, 0.96);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-
   .nav {
     min-height: 72px;
     padding: 12px 0;
@@ -804,9 +804,9 @@ a {
   }
 
   .hero {
-    min-height: auto;
-    padding-top: 24px;
-  }
+  min-height: auto;
+  padding-top: 96px;
+}
 
   .hero-content {
     grid-template-columns: 1fr;
