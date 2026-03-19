@@ -693,14 +693,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .topo {
-    position: relative !important;
-    top: auto !important;
-    width: 100%;
-    background: rgba(10, 10, 15, 0.96);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
+ .topo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(10, 10, 15, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
 
   .nav {
     min-height: 72px;
