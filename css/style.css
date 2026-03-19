@@ -669,10 +669,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .menu-toggle {
-  background: red !important;
-}
-
   .servicos-grid,
   .portfolio-grid,
   .sobre-cards,
@@ -774,7 +770,7 @@ a {
   }
 
   .menu {
-    display: flex !important;
+    display: none !important;
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
