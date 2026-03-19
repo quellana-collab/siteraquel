@@ -694,14 +694,16 @@ a {
 
 @media screen and (max-width: 768px) {
 .topo {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
+  position: static !important;
+  top: unset !important;
+  right: unset !important;
+  bottom: unset !important;
+  left: unset !important;
+  z-index: unset !important;
   width: 100%;
-  z-index: auto !important;
   background: rgba(10, 10, 15, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: none;
+  backdrop-filter: none !important;
 }
 
   .nav {
