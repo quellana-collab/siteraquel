@@ -717,18 +717,20 @@ a {
   }
 
   .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    max-width: unset;
-    width: auto;
-    text-align: left;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: none;
+  width: auto;
+  text-align: left;
+  flex: 1;
+}
 
   .logo-img img {
-  height: 60px;
-  width: auto;
-  max-width: none;
+  height: 60px !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0;
 }
 
   .logo-texto p {
