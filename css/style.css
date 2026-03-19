@@ -110,7 +110,7 @@ a {
 }
 
 .logo-img img {
-  height: 50px;
+  height: 40px;
   width: auto;
   max-width: none;
   object-fit: contain;
@@ -694,11 +694,12 @@ a {
 
 @media screen and (max-width: 768px) {
 .topo {
-  all: unset;
+  position: relative !important;
   display: block;
   width: 100%;
   background: rgba(10, 10, 15, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  top: auto;
 }
 
 .nav {
