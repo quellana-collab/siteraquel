@@ -663,7 +663,7 @@ a {
 
 @media (max-width: 768px) {
   .topo {
-    position: relative;
+    position: fixed;
     width: 100%;
     background: rgba(10, 10, 15, 0.96);
     backdrop-filter: blur(14px);
